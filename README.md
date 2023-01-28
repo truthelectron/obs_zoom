@@ -21,6 +21,28 @@ Run the script with the command python obs-automation.py
 When you open the Zoom app, OBS will automatically launch and start recording.
 Note: You may need to specify the path of the OBS executable in the subprocess.Popen() function if the script is unable to find it.
 
+## To automate the script in Windows, you can use the Task Scheduler to schedule the script to run automatically at a specific time or upon certain events.
+
+1. Open the Task Scheduler by searching for it in the Start menu or by running "taskschd.msc" in the Command Prompt.
+
+2. In the Task Scheduler, click on "Create Basic Task" in the Actions pane on the right side of the window.
+
+3. Give the task a name and description, then click Next.
+
+4. Choose when you want the task to start. For example, you can choose "When I log on" or "At a specific time" and then specify the time.
+
+5. Select "Start a program" as the action to be taken.
+
+6. In the Program/script field, enter the path of the script you want to run.
+
+7. Click Next, then Finish to create the task.
+
+8. You can also go to the Task Scheduler Library and check the task properties and triggers.
+
+9. To make sure that the task runs with the highest privilege, go to the "Actions" tab and then click on "Edit" and check the "Run with highest privileges"
+
+10. Task Scheduler will now automatically run the script at the specified time or event.
+
 ## Troubleshooting
 If you get ModuleNotFoundError for pyautogui library.It means the library is not installed.You can install it by running pip install pyautogui
 If you get attributeError for 'getWindows' .It means the version of pyautogui is not supported with this function, you can try updating the version of pyautogui
