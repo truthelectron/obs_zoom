@@ -44,8 +44,9 @@ Note: You may need to specify the path of the OBS executable in the subprocess.P
 10. Task Scheduler will now automatically run the script at the specified time or event.
 
 ## Troubleshooting
-If you get ModuleNotFoundError for pyautogui library.It means the library is not installed.You can install it by running pip install pyautogui
-If you get attributeError for 'getWindows' .It means the version of pyautogui is not supported with this function, you can try updating the version of pyautogui
+- If you get ModuleNotFoundError for pyautogui library.It means the library is not installed.You can install it by running pip install pyautogui
+- If you get attributeError for 'getWindows' .It means the version of pyautogui is not supported with this function, you can try updating the version of pyautogui
+- If you get FileNotFoundError then the program needs admin privilege to access the programs
 
 ## Contributing
 Fork it (https://github.com/yourusername/obs-automation/fork)
